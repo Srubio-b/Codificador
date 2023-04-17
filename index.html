@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <div class="logo-alura"><img src="./img/Logo.png" alt="alura"></div>
+    <form action="#">
+        <ul>
+            <li>
+                <label for="msg"></label>
+                <textarea name="mensaje_encriptado" id="msg" placeholder="Ingrese el texto aquí" oninput="convertTextarea()"></textarea>
+                <div class="exclamacion"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2z"/></svg></div>
+                <p class="recomendacion">Solo letras minúsculas y sin acentos</p>
+            </li>
+        </ul>
+    </form>
+    <div class="resultado">
+        <div class="sin-texto">
+            <img src="./img/Muñeco.png" alt="hh">
+            <h2>Ningún mensaje fue encontrado</h2>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <div class="resultado_texto">
+            <p></p>
+        </div>
+        <button onclick="copiarTexto()" class="copiar">Copiar</button>
+    </div>
+    <div class="button-container">
+        <button class="blue-button" type="submit">Encriptar</button>
+        <button class="grey-button" type="submit">Desencriptar</button>
+    </div>
+    <script src="index.js"></script>
+    <script src="Textarea.js"></script>
+    <script src="Copiar.js"></script>
+</body>
+</html>
+
+<!-- <li>
+    <button class="submit-button" type="submit">Encriptar</button>
+</li>
+<li>
+    <button class="submit-button" type="submit">Desencriptar</button>
+</li> -->
